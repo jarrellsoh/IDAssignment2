@@ -1,0 +1,352 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*nav bar*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+}
+nav a{
+    text-decoration: none;
+}
+.logo{
+    width: 40%;
+}
+.logo a{
+    color: #1DB954;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links a{
+    color: white;
+}
+.nav-links li{
+    list-style: none;
+}
+.burger{
+    display: none;
+    cursor: pointer
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+/*home page*/
+#home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+.homeimg{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.homeimg img{
+    width: 350px;
+}
+.hometext{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.hometitle{
+    font-size: 150%;
+    color: white;
+    letter-spacing: 2px;
+}
+.hometocustomize{
+    height: 40px;
+    width: 55%;
+    text-decoration: none;
+}
+.hometocustomize input{
+    border-radius: 25px;
+    display: flex;
+    background-color: #1DB954;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 120%;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/*customize page*/
+#customize{
+    background-color: #8C8C8C;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.customizeimgcontainer{
+    justify-content: start;
+    width: 40%;
+}
+.customizeimgcontainer img{
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+}
+.customizetext{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.customizetitle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 2;
+    height: 100%;
+}
+.customizeform{
+    flex: 5;
+}
+.customizeform form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+#selectgenre{
+    background-color: #8C8C8C;
+}
+#selectplaylist{
+    background-color: #8C8C8C;
+}
+.textform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.textquestions{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.textquestions input{
+    border: none;
+    background-color:  #8C8C8C;
+    border-bottom: 2px solid    #707070;
+}
+.submit{
+    width: 90%;
+    height: 40px;  
+}
+.submit button{
+    border-radius: 25px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 120%;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*playlist page*/
+#playlist{
+    background-color: #B8B8B8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.playlisttitle{
+    display: flex;
+    margin-top: 5%;
+    height: 30%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.playlistimg{
+    display: flex;
+    height: 35%;
+    justify-content: center;
+}
+.playlistimg img{
+    max-width: 260px;
+}
+.playlistoptions{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.playlistoptions input{
+    border-radius: 25px;
+    background-color: black;
+    text-align: center;
+    font-size: 120%;
+    height: 40px;
+    color: white;
+    letter-spacing: 1px;;
+    width: 25%;
+    border: none;
+    cursor: pointer;
+}
+
+/*view songs page*/
+#viewsongs{
+    background-color: #f2f2f2;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.songlist{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    height: 80%;
+    width: 40%;
+    justify-content: center;
+}
+.songlist div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+}
+.songlist img{
+    height: 100%;
+}
+.songlist a{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #8a8a8a;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #808080;
+}
+.songinfo iframe{
+    width: 300px;
+    height: 80px;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px){
+    /*nav bar*/
+    .nav-links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0px;
+        top: 7vh;
+        height: 1000%;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: black;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    /*homepage*/
+    #home{
+        flex-direction: column;
+    }
+    .homeimg{
+        margin-top: 10%;
+    }
+    .hometext{
+        justify-content: start;
+    }
+    #customize{
+        align-items: center;
+        flex-direction: column;
+    }
+    .customizeimgcontainer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .customizeimgcontainer img{
+        max-width: 400px;
+    }
+    .customizetext{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .playlistoptions{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .playlistoptions input{
+        width: 70%;
+        max-width: 400px;
+    }
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
